@@ -9,7 +9,7 @@ Where: **FMI, room 120**
 
 Progamming language: **C++**
 
-IDE: **Code Blocks, Visual Studio**
+IDE: **Code Blocks, Visual Studio** *(or whatever works for you)*
 
 ## Grading
 
