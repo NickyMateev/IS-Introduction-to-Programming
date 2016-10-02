@@ -18,10 +18,10 @@ Two exams throughout the semester:
 * The first one will be midsemester and will cover:
 
  * Arrays
-  * Functions
+ * Functions
 
-  * The second one will be at the end of the semester and will cover:
-   * Material from the whole semester
+* The second one will be at the end of the semester and will cover:
+ * Material from the whole semester
 
    **The average grade from the two exams will be your grade for the course.**
 
