@@ -21,26 +21,26 @@ CodeBlocks: [Download][2]
 ### Visual Studio
 
 #### Step 1:
-![vs1](/images/vs1.png)
+![vs1](/Week01/images/vs1.png)
 
 #### Step 2:
-![vs2](/images/vs2.png)
+![vs2](/Week01/images/vs2.png)
 
 #### Step 3:
-![vs3](/images/vs3.png)
+![vs3](/Week01/images/vs3.png)
 
 #### Step 4:
 Congrats, you've creating your first project!
-![vs4](/images/vs4.png)
+![vs4](/Week01/images/vs4.png)
 
 #### Step 5:
 Now add the following lines of code and press CTRL+F5 afterwards:
-![vs5](/images/vs5.png)
+![vs5](/Week01/images/vs5.png)
 
 #### Step 6:
 You should be able to see "Hello World!" printed on your screen. That's it, your first C++ program!
 
-![vs6](/images/vs6.png)
+![vs6](/Week01/images/vs6.png)
 
 
 That's it, your first C++ program!
