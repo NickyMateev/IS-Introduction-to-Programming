@@ -73,10 +73,12 @@ You've now created your first C++ project in CodeBlocks!
 
 #### Step 8:
 Navigate through the menu on the left, find the **main.cpp** file and double click it. By default CodeBlocks has generated some code for you - the famous *"Hello World!"* program, which prints "Hello World!" to your screen.
+
 ![cb8](/Week01/images/cb8.png)
 
 #### Step 9:
 In order to run the program, just press *F9* and watch in astonishment!
+
 ![cb9](/Week01/images/cb9.png)
 
 **Congrats, you've now run your first C++ program in CodeBlocks!**
