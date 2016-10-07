@@ -114,7 +114,7 @@ In programming you'll be working with various types of data. For example: number
 For more info on data types: [Data Types][1]
 
 ## Variables:
-Variables are an essential part of every program. A variable consists of a **data type**, **name** and **value**.
+Variables are an essential part of every program. A variable consists of a **data type**, **name** and **value**. Variables are stored in the computer's RAM when they are created and are deleted from there when the program stops.
 
 #### Example of variable declaration:
  * This declares the variable **x** of type **int**: `int x;`
@@ -179,25 +179,27 @@ int y = 2;
 ```
 
 **Arithmetic operators:**
-| Operator      | Description                          | Example             |
-| ------------- |:------------------------------------:| -------------------:|
-| +        |  Adds two operands                        | x + y is equal to 6 |
-| -        |  Subtracts second operand from the first  | x - y is equal to 2 |
-| *        |  Multiplies both operands                 | x * y is equal to 8 |
-| /        |  Divides first operand with the second    | x / y is equal to 2 |
-| %        |  Returns the remainder when dividing the first operand with the second    | x % y is equal to 0 |
-| ++       |  Increases value by one                   | x++ is equal to 5   |
-| --       |  Decreases value by one                   | y-- is equal to 1   |
+
+| Operator      | Description                                                               | Example             |
+| ------------- |:-------------------------------------------------------------------------:| -------------------:|
+| +             |  Adds two operands                                                        | x + y is equal to 6 |
+| -             |  Subtracts second operand from the first                                  | x - y is equal to 2 |
+| *             |  Multiplies both operands                                                 | x * y is equal to 8 |
+| /             |  Divides first operand with the second                                    | x / y is equal to 2 |
+| %             |  Returns the remainder when dividing the first operand with the second    | x % y is equal to 0 |
+| ++            |  Increases value by one                                                   | x++ is equal to 5   |
+| --            |  Decreases value by one                                                   | y-- is equal to 1   |
 
 **Relational operators:**
-| Operator      | Description                          | Example             |
-| ------------- |:------------------------------------:| -------------------:|
-| ==       |  Returns true if x and y are equal, false otherwise | x == y is equal to false |
-| !=       |  Returns true if x and y are not equal, false otherwise  | x != y is equal to true |
-| >        |  Returns true if x is bigger than y, false otherwise     | x > y is equal to true |
-| <        |  Returns true if x is smaller than y, false otherwise    | x < y is equal to false |
-| >=       |  Returns true if x is bigger than or equal to y, false otherwise  | x >= y is equal to true   |
-| <=       | Returns true if x is smaller than or equal to y, false otherwise   | x <= y is equal to false   |
+
+| Operator      | Description                                                        | Example                   |
+| ------------- |:----------------------------------------------------------------- :| -------------------------:|
+| ==            |  Returns true if x and y are equal, false otherwise                | x == y is equal to false  |
+| !=            |  Returns true if x and y are not equal, false otherwise            | x != y is equal to true   |
+| >             |  Returns true if x is bigger than y, false otherwise               | x > y is equal to true    |
+| <             |  Returns true if x is smaller than y, false otherwise              | x < y is equal to false   |
+| >=            |  Returns true if x is bigger than or equal to y, false otherwise   | x >= y is equal to true   |
+| <=            | Returns true if x is smaller than or equal to y, false otherwise   | x <= y is equal to false  |
 
 **Logical operators:**
 Let's have:
