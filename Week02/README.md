@@ -26,8 +26,6 @@ Whenever we want to print something to the screen or want to take some input fro
 using namespace std;
 ```
 
-The first line includes a library called *iostream*. The second one is a namespace inside the iostream library. Later in the course we'll look at these in detail, don't worry about them now.
-
 So our program should now look something like this:
 ```c++
 #include <iostream>
@@ -62,7 +60,7 @@ Similarly, **<<** is an operator which takes two arguments:
 
 ##### Examples:
 
-This prints text to the screen: `cout << "Hello World!;"`
+This prints text to the screen: `cout << "Hello World!"`
 
 This prints a whole number to the screen: `cout << 24;`
 
@@ -103,7 +101,73 @@ The result is now:
 Bye World!
 
 ## Data types and variables:
-Coming soon...
+## Data types:
+In programming you'll be working with various types of data. For example: numbers and characters. Some of the data types available in C++ are:
+
+| Type          | Amount of memory in computer  | Possible values  |
+| ------------- |:-----------------------------:| ----------------:|
+| int           |  4 bytes             | -2147483648 to 2147483647 |
+| double        |  8 bytes             | +/- 1.7e +/- 308 (~15 digits)|
+| bool          |  1 byte              |    true or false(1 or 0)  |
+|char           |  1 byte              |    -128 to 127             |
+
+For more info on data types: [Data Types][1]
+
+## Variables:
+Variables are an essential part of every program. A variable consists of a **data type**, **name** and **value**.
+
+#### Example of variable declaration:
+ * This declares the variable **x** of type **int**: `int x;`
+ * This declares the variable the variable **pi** of type **double**: `double pi;`
+ * This declares the variable **var** of type **char**: `char var;`
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x;
+  double pi;
+  char var;
+
+  return 0;
+}
+```
+
+So far, we've only declared some variables, but we've yet to store some values in them. The process of setting values to variables is called **variable initialization**. A simple way to do that is:
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x;
+  double pi;
+  char var;
+
+  x = 5;
+  pi = 3.14;
+  var = 'c';
+
+  return 0;
+}
+```
+
+This will definetely work and is acceptable code, but a better practice is to declare and initialize(give value to) variables all at once:
+```c++
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int x = 5;
+  double pi = 3.14;
+  char var = 'c';
+
+  return 0;
+}
+```
 
 ## Comments:
 Comments are lines of code in your program which do not affect any of your program logic. They're just notes that you can write at anywhere in your code. They're most widely used when the programmer feels like he needs to write an explanation as to why he has written the specific piece of code.
@@ -150,3 +214,5 @@ int main()
 ```
 
 Comments have no effect on your code and are ignored when your code gets compiled. They're created for documentation purposes.
+
+[1]: https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm
