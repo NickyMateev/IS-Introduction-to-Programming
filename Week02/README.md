@@ -193,7 +193,7 @@ int y = 2;
 **Relational operators:**
 
 | Operator      | Description                                                        | Example                   |
-| ------------- |:----------------------------------------------------------------- :| -------------------------:|
+| ------------- |:------------------------------------------------------------------:| -------------------------:|
 | ==            |  Returns true if x and y are equal, false otherwise                | x == y is equal to false  |
 | !=            |  Returns true if x and y are not equal, false otherwise            | x != y is equal to true   |
 | >             |  Returns true if x is bigger than y, false otherwise               | x > y is equal to true    |
