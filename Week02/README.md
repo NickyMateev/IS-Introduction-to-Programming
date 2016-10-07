@@ -109,7 +109,7 @@ In programming you'll be working with various types of data. For example: number
 | int           |  4 bytes             | -2147483648 to 2147483647 |
 | double        |  8 bytes             | +/- 1.7e +/- 308 (~15 digits)|
 | bool          |  1 byte              |    true or false(1 or 0)  |
-|char           |  1 byte              |    -128 to 127             |
+| char          |  1 byte              |    -128 to 127             |
 
 For more info on data types: [Data Types][1]
 
@@ -154,7 +154,7 @@ int main()
 }
 ```
 
-This will definetely work and is acceptable code, but a better practice is to declare and initialize(give value to) variables all at once:
+This will definitely work and is acceptable code, but a better practice is to declare and initialize(give value to) variables all at once:
 ```c++
 #include <iostream>
 using namespace std;
@@ -168,6 +168,55 @@ int main()
   return 0;
 }
 ```
+
+### Operations with variables
+Due to the large amount of operators and operations between variables in C++, we'll just point out some of the most fundamental ones. For more information: [Operators in C++][2]
+
+Let's have:
+```c++
+int x = 4;
+int y = 2;
+```
+
+**Arithmetic operators:**
+| Operator      | Description                          | Example             |
+| ------------- |:------------------------------------:| -------------------:|
+| +        |  Adds two operands                        | x + y is equal to 6 |
+| -        |  Subtracts second operand from the first  | x - y is equal to 2 |
+| *        |  Multiplies both operands                 | x * y is equal to 8 |
+| /        |  Divides first operand with the second    | x / y is equal to 2 |
+| %        |  Returns the remainder when dividing the first operand with the second    | x % y is equal to 0 |
+| ++       |  Increases value by one                   | x++ is equal to 5   |
+| --       |  Decreases value by one                   | y-- is equal to 1   |
+
+**Relational operators:**
+| Operator      | Description                          | Example             |
+| ------------- |:------------------------------------:| -------------------:|
+| ==       |  Returns true if x and y are equal, false otherwise | x == y is equal to false |
+| !=       |  Returns true if x and y are not equal, false otherwise  | x != y is equal to true |
+| >        |  Returns true if x is bigger than y, false otherwise     | x > y is equal to true |
+| <        |  Returns true if x is smaller than y, false otherwise    | x < y is equal to false |
+| >=       |  Returns true if x is bigger than or equal to y, false otherwise  | x >= y is equal to true   |
+| <=       | Returns true if x is smaller than or equal to y, false otherwise   | x <= y is equal to false   |
+
+**Logical operators:**
+Let's have:
+```c++
+bool x = true;
+bool y = false;
+```
+*Note: This the above code snippet is the same as:*
+```c++
+bool x = 1;
+bool y = 0;
+```
+That's because in programming *true* is the same as *1* and *false* is the same as *0*.
+
+| Operator  | Description                                                                               | Example                   |
+| --------- |:-----------------------------------------------------------------------------------------:| -------------------------:|
+| &&        | Returns true only if both x and y are true, false otherwise                               | x && y is equal to false  |
+| \|\|      | Returns true if at least one of x or y are equal to true, returns false if both are false | x \|\| y is equal to true |
+| !         | Reverses the logical state - true becomes false, and false becomes true                   | !x is equal to false, !y is equal to true |
 
 ## Comments:
 Comments are lines of code in your program which do not affect any of your program logic. They're just notes that you can write at anywhere in your code. They're most widely used when the programmer feels like he needs to write an explanation as to why he has written the specific piece of code.
@@ -216,3 +265,4 @@ int main()
 Comments have no effect on your code and are ignored when your code gets compiled. They're created for documentation purposes.
 
 [1]: https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm
+[2]: https://www.tutorialspoint.com/cplusplus/cpp_operators.htm
