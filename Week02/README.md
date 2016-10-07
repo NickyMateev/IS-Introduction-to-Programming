@@ -26,6 +26,8 @@ Whenever we want to print something to the screen or want to take some input fro
 using namespace std;
 ```
 
+The first line includes a library called *iostream*. The second one is a namespace inside the iostream library. Later in the course we'll look at these in detail, don't worry about them now.
+
 So our program should now look something like this:
 ```c++
 #include <iostream>
@@ -54,13 +56,13 @@ How does this work? Imagine you want to add two numbers - 2 and 5. The expressio
 
 Similarly, **<<** is an operator which takes two arguments:
 * **Left argument:** *cout*
- * **Right argument:** The thing you want to print to the screen - it could also be a number, character, boolean or text(more about different data types later on).
+* **Right argument:** The thing you want to print to the screen - it could also be a number, character, boolean or text(more about different data types later on).
 
-*Note: Later in the OOP course we'll learn what **cout** is, so don't worry about it now.*
+*Note: Later in the OOP course we'll learn what cout is, so don't worry about it now.*
 
 ##### Examples:
 
-This prints text to the screen: `cout << "Hello World!"`
+This prints text to the screen: `cout << "Hello World!;"`
 
 This prints a whole number to the screen: `cout << 24;`
 
