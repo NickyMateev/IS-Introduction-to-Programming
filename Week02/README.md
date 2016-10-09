@@ -26,6 +26,8 @@ Whenever we want to print something to the screen or want to take some input fro
 using namespace std;
 ```
 
+The first line includes a **library** called *iostream*. The second one is a **namespace** inside the iostream library. Later in the course we'll look at libraries and namespaces in more detail, don't worry about them now.
+
 So our program should now look something like this:
 ```c++
 #include <iostream>
