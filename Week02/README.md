@@ -60,7 +60,7 @@ Similarly, **<<** is an operator which takes two arguments:
 
 ##### Examples:
 
-This prints text to the screen: `cout << "Hello World!"`
+This prints text to the screen: `cout << "Hello World!;"`
 
 This prints a whole number to the screen: `cout << 24;`
 
@@ -101,7 +101,7 @@ The result is now:
 Bye World!
 
 ## Data types and variables:
-## Data types:
+### Data types
 In programming you'll be working with various types of data. For example: numbers and characters. Some of the data types available in C++ are:
 
 | Type          | Amount of memory in computer  | Possible values  |
@@ -113,7 +113,7 @@ In programming you'll be working with various types of data. For example: number
 
 For more info on data types: [Data Types][1]
 
-## Variables:
+### Variables
 Variables are an essential part of every program. A variable consists of a **data type**, **name** and **value**. Variables are stored in the computer's RAM when they are created and are deleted from there when the program stops.
 
 #### Example of variable declaration:
