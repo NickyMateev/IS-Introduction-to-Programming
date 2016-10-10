@@ -16,7 +16,7 @@ int main()
 }
 ```
 
-**Every program** has to have a main function. That's where our program starts execution. We'll study functions in C++ later on, but for now just remember that every program we'll write from now on has to have a main function written as it is in the code snippet above. The code we will be writing will be placed somewhere after **the opening bracket** and before the **return 0;** statement. Every single thing we write will be executed in the order it was written. Think of **return 0;** as the point where the program ends.
+**Every program** has to have a **main function**. That's where our program starts execution. We'll study functions in C++ later on, but for now just remember that every program we write from now on has to have a **main function** written as it is in the code snippet above. The code we will be writing will be placed somewhere after **the opening bracket** and before the **return 0;** statement. Every single thing we write will be executed in the order it was written. Think of **return 0;** as the point where the program ends.
 
 ## Printing to the screen:
 Whenever we want to print something to the screen or want to take some input from the keyboard from the user, we first have to include the following two lines of code above at the top of our code:
