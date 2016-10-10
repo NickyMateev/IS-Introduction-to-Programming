@@ -3,7 +3,7 @@
 ## What's a computer program?
 
 A computer program is simply **a sequence of instructions that are executed by the computer**.
-Programming languages like **C++** allow us to write such instructions(*code*). With the help of a program called a *compiler* we can convert our code into machine code understandable by the CPU. After our code is compiled we can run it and see the result of our program.
+Programming languages like **C++** allow us to write such instructions(*code*). With the help of a program called a *compiler* we can convert our programming code into machine code understandable by the CPU. After our code is compiled we can run it and see the result of our program.
 
 ## Structure of a basic C++ program:
 This is called the **main function**:
