@@ -11,7 +11,7 @@ if(boolean_expression)
 ```
 
 ### The *if-else* statement:
-If a certain condition is ***true***, executes a specific piece of code, otherwise exectures some other piece of code.
+If a certain condition is ***true***, executes a specific piece of code, otherwise executes some other piece of code.
 ```c++
 if(boolean_expression)
 {
@@ -126,4 +126,59 @@ int main()
 
 
 ### The *switch* statement:
-Coming soon...
+The switch is in some ways very similar to an *if-else if-else* statement, but quite different in syntax.
+
+Structure of a *switch* statement:
+```c++
+switch(value)
+{
+    case value1 : statement;
+                  break;
+    case value2 : statement;
+                  break;
+    case value3 : statement;
+                  break;
+    .
+    .
+    .
+    case valueN: statement;
+                 break;
+    default:     statement;
+                 break;
+}
+```
+
+The idea is simple - inside the brackets(after the switch) we pass a variable, constant or a literal. Then the value the value is checked by each one of the case values starting from the one on the top to the one that's on the bottom. If the value that's passed is equal to one of the case values, then the statement corresponding to that case is executed. You can have more than one statements in a case. After the statements in each case we always have to write ***break;*** in order to stop execution of the *switch* statement and get out of it.
+
+The ***default*** case is executed when the value that's passed to the switch is not equal to any of the cases that's above it.
+
+Notes:
+ * The case values ***MUST*** be of the same data type as the data type of the value that's passed; *switch* is most often used with ***int*** and ***char***. Doesn't work with floating point data types(***double***, ***float***).
+ * The default case is not necessary, but it's highly recommended.
+ * If a case is entered and there is no ***break;*** written for that case, then every case that's below the current one gets executed until a ***break;*** is reached or if we've reached the end of the whole switch.
+
+Example of a *switch* statement:
+```c++
+int main()
+{
+    int x = 3;
+    switch(x)
+    {
+        case 1: cout << "You entered 1" << endl;
+                break;
+        case 2: cout << "You entered 2" << endl;
+                break;
+        case 3: cout << "You entered 3" << endl;  // <--- this case will execute in the current example
+                cout << "We can have multiple statements in a case, see?" << endl;
+                break;
+        default: cout << "You entered a number that's not 1, 2 or 3..." << endl;
+                break;
+    }
+
+    return 0;
+}
+```
+
+More on switch statements: [here][1]
+
+[1]: https://www.tutorialspoint.com/cplusplus/cpp_switch_statement.htm
