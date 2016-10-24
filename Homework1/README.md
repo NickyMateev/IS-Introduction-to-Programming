@@ -56,7 +56,7 @@ Write a program which **takes an integer** from the user.
 
 Examples:
 |      Input      |      Output     |
-|-----------------|-----------------|
+|----------------:|:---------------:|
 | 1               | 10              |
 | 5               | 500             |
 | 8               | 8000            |
