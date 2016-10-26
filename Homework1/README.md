@@ -14,7 +14,7 @@ Examples:
 
 
 #### Task 2:
-You are given **3 integers**. Your task is to display *+*, *-* or *0* depending on the result of the product of the three numbers. If the product is a positive number - print *+*, if it's a negative number - print *-*, if the product is 0 - print 0. Solve the task without actually calculating the product of the three integers.
+You are given **3 integers**. Your task is to display *+*, *-* or *0* depending on the result of the product of the three numbers. If the product is a positive number - print *+*, if it's a negative number - print *-*, if the product is 0 - print 0. **Solve the task without actually calculating the product of the three integers.**
 
 Examples:
 
@@ -65,4 +65,4 @@ Examples:
 | 1      | 10            |
 | 5      | 500           |
 | 8      | 8000          |
-| 10     | invalid score |
+| 10     | Invalid input |
