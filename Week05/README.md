@@ -101,12 +101,12 @@ int main()
 ```
 
 Here's what's happening:
-1) A variable called **i** and of type **int** is created. It's initial value is **0**;
-2) The condition **i < 10** is checked;
-3) If the condition returns **false**, then the loop exits and we continue with the code after the **for** loop.
-4) If the condition returns **true**, then the code inside the **for** block (a.k.a. the *cout << "Hello World" << endl;* statement) gets executed;
-5) After the code inside the block is executed, then we increment **i** by **1**(the *i++* part);
-6) Go back to step 2) and repeat.
+ 1. A variable called **i** and of type **int** is created. It's initial value is **0**;
+ 2. The condition **i < 10** is checked;
+ 3. If the condition returns **false**, then the loop exits and we continue with the code after the **for** loop.
+ 4. If the condition returns **true**, then the code inside the **for** block (a.k.a. the *cout << "Hello World" << endl;* statement) gets executed;
+ 5. After the code inside the block is executed, then we increment **i** by **1**(the *i++* part);
+ 6. Go back to step 2. and repeat.
 
 That's everything to it! Nothing more, nothing less.
 
