@@ -1,4 +1,4 @@
-# Week 07
+# Week 06
 
 No new material for this week. Continue getting better with loops by doing this week's tasks.
 
