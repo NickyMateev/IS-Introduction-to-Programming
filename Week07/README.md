@@ -161,13 +161,13 @@ The picture represents a two-dimensional array that can be declared in C++ like 
 int arr[3][5];
 ```
 
-You can think of it like **arr** is a variable which contains 3 arrays of size 5 each. Or you can think of it as if it was a matrix with 3 rows and 5 columns.
+You can think of it like **arr** is a variable which contains **3 arrays** of **size 5 each**. Or you can think of it as if it was a **matrix** with **3 rows** and **5 columns**.
 
 Just like normal arrays, we have to initialize our multidimensional array with some values before we start working with it. This is how we can do it:
 ```c++
 int arr[3][5] = {{1,2,3,4,5}, {6,7,8,9,10}, {11,12,13,14,15}};
 ```
-As you can see, it almost looks like we're creating 3 arrays, each with 5 elements.
+As you can see, it almost looks like we're creating **3 arrays**, each with **5 elements**.
 
 ![matrixRepInit](/Week07/images/matrixRepInit.jpeg)
 
@@ -178,13 +178,15 @@ Accessing an element is just as simple as you would think. Counting starts from 
 cout << arr[1][3] << endl; // accesses and prints the 4th element in the 2nd array
 ```
 
+Notice how the **2nd array** is specified with index **1** and the **4th** element is specified with index **3**. This is again due to the fact that the indexing starts from **0**.
+
 ![matrixRepAccess](/Week07/images/matrixRepAccess.jpeg)
 
-Arrays can have more than two dimension. In fact you can have as many dimensions as you want, as long as you have enough RAM to allocate memory for each element. For example, this is a 4 dimensional array:
+Arrays can have more than two dimensions. In fact you can have as many dimensions as you want, as long as you have enough RAM to allocate memory for each element. For example, this is a 4 dimensional array:
 ```c++
 int arr[5][10][3][20];
 ```
-Don't try to image how it would look like in your head. It's impossible. Multidimensional arrays are just an abstraction for programmers.
+But don't try to imagine how a 4 dimensional array would look like in your head. It's impossible. Multidimensional arrays are just an abstraction for programmers.
 
 **Example of a program printing the doubled values of a two-dimensional array's elements:**
 
