@@ -11,17 +11,18 @@ This would be a representation of an array called **arr** containing **6 element
 A typical declaration of an array is:
 
 **type** *name*[**elements**];
+
 Where:
  * **type** - could be *int, double, char*, etc...;
  * **name** - could be any name you want *(except reserved keywords in the C++ language)*;
- * **elements** - some number that's equal or higher than 1. This represents the size of the array.
+ * **elements** - some number that's equal to or greater than 1. This represents the size of the array.
 
-So this is how we would create a int array of 6 elements:
+So this is how we would create an int array of 6 elements:
 ```c++
 int arr[6];
 ```
 
-**NOTE: The size of the array inside the square brackets [] must be a CONSTANT, not a variable!**
+**NOTE: The size of the array inside the square brackets [] must be a CONSTANT(or literal), not a variable!**
 
 ### Initializing an array
 For now we've only declared/created our array. Now we need to initialize it with some values. If you forget to initialize your array, then the values of its elements will be undetermined and could lead to errors if later used.
@@ -38,7 +39,7 @@ As you can see we've set the values for all of the 6 array elements.
 
 This would be valid as well:
 ```c++
-int arr[] = {12 , 45 , 1, -4, 5, 9}; // an array will be created with space for 6 elements
+int arr[] = {12 , 45 , 1, -4, 5, 9}; // an array will be created(and initialized) with space for 6 elements
 ```
 
 
@@ -71,15 +72,15 @@ Accessing the value of an element in an array is simple. All you have to do is s
 
 ![arrayRepIndex](/Week07/images/arrayRepIndex.jpeg)
 
-The following code demonstrates creating an array and accessing it's second element:
+The following code demonstrates creating an array, initializing it with values and then accessing its second element:
 ```c++
 int arr[6] = {12 , 45 , 1, -4, 5, 9}; // creating & initializing the array
 cout << arr[1] << endl; // accessing and printing the second element
 ```
 
-Notice how we would specify index 1 for the second element. That's because, like mentioned before, the indexing starts from 0 when working with arrays.
+Notice how we would specify index **1** for the **second element**. That's because, like mentioned before, the indexing starts from **0** when working with arrays.
 
-Every array element is no different than an regular variable. We just access it with a specific index. Here are some other valid examples of array element usage:
+Every array element is no different than a regular variable. We just access it with a specific array index. Here are some other valid examples of array element usage:
 ```c++
 arr[3] = 123; // setting the value of the 4th element to 123
 int x = arr[3]; // setting the value of x to 123(because that's the value of the 4th element in the array)
@@ -92,7 +93,7 @@ cout << arr[4 + y] << endl; // accessing the 6th element and printing it
 
 **Example of a program which prints the doubled values of the elements in an array:**
 
-The following program will demonstrate most of the things we learned about here. You'll also see a very good practice on how to initialize an array with a constant variable(which is allowed by C++).
+The following program will demonstrate most of the things we learned about arrays. You'll also see a very good practice on how to create an array using a constant variable for its size(which is allowed in C++, and which is recommended to do when creating arrays).
 ```c++
 #include <iostream>
 using namespace std;
@@ -124,8 +125,8 @@ int main()
 }
 ```
 
-Example:
 
-| Input                                             | Output                                           |
-|---------------------------------------------------|--------------------------------------------------|
-| arr[0] = 1<br/>arr[1] = 2<br/>arr[2] = 3          | Element #0: 2<br/>Element #1: 4<br/>Element #2: 6|
+Example:
+| Input                                                                                    | Output                                           |
+|------------------------------------------------------------------------------------------|--------------------------------------------------|
+| How many elements do you want to enter: 3<br/>arr[0] = 1<br/>arr[1] = 2<br/>arr[2] = 3   | Element #0: 2<br/>Element #1: 4<br/>Element #2: 6|
