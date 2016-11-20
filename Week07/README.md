@@ -149,3 +149,65 @@ Example:
 | Input                                                                                    | Output                                           |
 |------------------------------------------------------------------------------------------|--------------------------------------------------|
 | How many elements do you want to enter: 3<br/>arr[0] = 1<br/>arr[1] = 2<br/>arr[2] = 3   | Element #0: 2<br/>Element #1: 4<br/>Element #2: 6|
+
+
+## Multidimensional arrays
+Multidimensional arrays are often described as "arrays of arrays". For instance, a two-dimensional array can be thought of as a two-dimensional table or matrix made up of elements of the same data type(*int, char, double, etc.*).
+
+![matrixRep](/Week07/images/matrixRep.jpeg)
+
+The picture represents a two-dimensional array that can be declared in C++ like so:
+```c++
+int arr[3][5];
+```
+
+You can think of it like **arr** is a variable which contains 3 arrays of size 5 each. Or you can think of it as if it was a matrix with 3 rows and 5 columns.
+
+Just like normal arrays, we have to initialize our multidimensional array with some values before we start working with it. This is how we can do it:
+```c++
+int arr[3][5] = {{1,2,3,4,5}, {6,7,8,9,10}, {11,12,13,14,15}};
+```
+As you can see, it almost looks like we're creating 3 arrays, each with 5 elements.
+
+![matrixRepInit](/Week07/images/matrixRepInit.jpeg)
+
+Like you would expect, if we omit some of the values when initializing the array, then those elements would have the value 0.
+
+Accessing an element is just as simple as you would think. Counting starts from **0** for both dimensions. So if we wanted to access the **4th** element in the **2nd array**(or the element in the **2nd** row and **4th** column, if that's how you prefer to think of the array) then you would write something like this:
+```c++
+cout << arr[1][3] << endl; // accesses and prints the 4th element in the 2nd array
+```
+
+![matrixRepAccess](/Week07/images/matrixRepAccess.jpeg)
+
+Arrays can have more than two dimension. In fact you can have as many dimensions as you want, as long as you have enough RAM to allocate memory for each element. For example, this is a 4 dimensional array:
+```c++
+int arr[5][10][3][20];
+```
+Don't try to image how it would look like in your head. It's impossible. Multidimensional arrays are just an abstraction for programmers.
+
+**Example of a program printing the doubled values of a two-dimensional array's elements:**
+
+```c++
+#include <iostream>
+using namespace std;
+
+const int ROWS = 3;
+const int COLS = 5;
+
+int main()
+{
+    int arr[ROWS][COLS] = {{1,2,3,4,5}, {6,7,8,9,10}, {11,12,13,14,15}};
+
+    for(int i = 0; i < ROWS; i++)
+    {
+        for(int j = 0; j < COLS; j++)
+        {
+            cout << arr[i][j] * 2 << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
