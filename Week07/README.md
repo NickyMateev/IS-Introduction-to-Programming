@@ -127,6 +127,7 @@ int main()
 
 
 Example:
+
 | Input                                                                                    | Output                                           |
 |------------------------------------------------------------------------------------------|--------------------------------------------------|
 | How many elements do you want to enter: 3<br/>arr[0] = 1<br/>arr[1] = 2<br/>arr[2] = 3   | Element #0: 2<br/>Element #1: 4<br/>Element #2: 6|
