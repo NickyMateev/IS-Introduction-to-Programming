@@ -90,6 +90,24 @@ int y = 1;
 cout << arr[4 + y] << endl; // accessing the 6th element and printing it
 ```
 
+Now that you know how to access an array's elements, here's another way that you can set initial values for an array's elements after you have created it:
+```c++
+int arr[6];
+arr[0] = 12;
+arr[1] = 45;
+arr[2] = 1;
+arr[3] = -4;
+arr[4] = 5;
+arr[5] = 9;
+```
+
+This is pretty much the same as:
+```c++
+int arr[6] = {12 , 45 , 1, -4, 5, 9};
+```
+
+But you can see that the second way is still much more simpler and compact.
+
 
 **Example of a program which prints the doubled values of the elements in an array:**
 
