@@ -5,7 +5,7 @@ const int SIZE = 100;
 const int ROWS = 2;
 const int COLS = 3;
 
-// prints a message a certain number of times
+// function which prints a message a certain number of times
 void printMessage(int numOfTimes)
 {
   for(int i = 0; i < numOfTimes; i++)
@@ -14,7 +14,7 @@ void printMessage(int numOfTimes)
   }
 }
 
-// functions, which initializes an array's elemets:
+// function which initializes an array's elemets:
 void initArray(int arr[], int size)
 {
   for(int i = 0; i < size; i++)
@@ -24,7 +24,7 @@ void initArray(int arr[], int size)
   }
 }
 
-// functions, which prints an array's elemets:
+// function which prints an array's elemets:
 void printArray(int arr[], int size)
 {
   for(int i = 0; i < size; i++)
@@ -33,8 +33,8 @@ void printArray(int arr[], int size)
   }
 }
 //
-// functions, which initializes a multidimensional array's elemets:
-void initMultiArray(int arr[][COLS], int rows, int cols)
+// function which initializes a multidimensional array's elemets:
+void initMultiArray(int arr[][COLS], int rows, int cols) // notice how all but the first pair of brackets have to be specified with the size of the array
 {
   for(int i = 0; i < rows; i++)
   {
@@ -47,8 +47,8 @@ void initMultiArray(int arr[][COLS], int rows, int cols)
   }
 }
 
-// functions, which prints a multidimensional array's elemets:
-void printMultiArray(int arr[][COLS], int rows, int cols) // notice how all but the first pair of brackets have to be specified with size
+// function which prints a multidimensional array's elemets:
+void printMultiArray(int arr[][COLS], int rows, int cols)
 {
   for(int i = 0; i < rows; i++)
   {
