@@ -4,8 +4,7 @@
 A function is just a piece of code that we write once and then can later reuse whenever we need to. Functions help us in structuring our code into understandable and reusable pieces of code.
 
 ### Structure of a function:
-**returnType** *name*([**parameter 1, parameter 2, ..., parameter n**])
-
+**returnType** *name*([**parameter 1, parameter 2, ..., parameter n**])<br/>
 {   <br/>
     <i>statements</i>;
     <br/>
