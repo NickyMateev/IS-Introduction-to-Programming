@@ -6,11 +6,11 @@ A function is just a piece of code that we write once and then can later reuse w
 ### Structure of a function:
 **returnType** *name*([**parameter 1, parameter 2, ..., parameter n**])
 
-{
-
-    *statements;*
-    return **typeValue**;   
-
+{   <br/>
+    <i>statements</i>;
+    <br/>
+    return <b>typeValue</b>;
+    <br/>
 }
 
 Where:
