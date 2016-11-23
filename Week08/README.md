@@ -9,9 +9,8 @@ A function is just a piece of code that we write once and then can later reuse w
 {
 
     *statements;*
-    <br/>
-    return **typeValue**;
-    
+    return **typeValue**;   
+
 }
 
 Where:
