@@ -7,16 +7,18 @@ A function is just a piece of code that we write once and then can later reuse w
 **returnType** *name*([**parameter 1, parameter 2, ..., parameter n**])
 
 {
+
     *statements;*
     <br/>
     return **typeValue**;
+    
 }
 
 Where:
  * **returnType** - the type of the data returned by the function after it's done(ex: *int, double, char, etc.*);
  * *name* - the name of the function; can be whatever you want;
  * [**parameter 1, parameter 2, ..., parameter n**] - (as many parameters as needed): Each parameter consists of a type followed by a name, with each parameter being separated from the next by a comma. Each parameter looks just like a regular variable declaration (ex.: int x), and in fact acts within the function as a regular variable which is local to the function. The purpose of parameters is to allow passing arguments to the function from the location where it is called from.
- * *statements* - your code which actually gets executed when a function is called
+ * *statements* - the code which actually gets executed when the function is called
  * **typeValue** - the value returned from the function after it's done; the value must match the type specified by the **returnType** of the function.
 
 Examples:
@@ -74,7 +76,7 @@ bool isLargerThan100(int num)
 }
 ```
 
-**NOTE**: Notice how **ALL** functions have the keyword **return** in them at some point. The word **return** tells a function when to stop executing, but we have to pass a *value* after the **return**, which corresponds the **returnType** we've specified for the function.
+**NOTE**: Notice how **ALL** functions have the keyword **return** in them at some point. The word **return** tells a function when to stop executing, but we have to pass a *value* after the **return**, which corresponds to the **returnType** we've specified for the function.
 
 Those were some examples of declaring and defining functions. Now let's see how we can call functions:
 
@@ -118,7 +120,7 @@ int main()
 ```
 
 ### Functions which don't return anything(without return type)
-Sometimes functions just aren't meant to return a value. That's why in C++ there exists the keyword **void**. **Void** is written in the place of the **returnType** whenever we want to denote that a function won't return anything.
+Sometimes functions just aren't meant to return a value. That's why in C++ the keyword **void** exists; **void** is written in place of the **returnType** whenever we want to denote that a function won't return anything.
 
 Example:
 ```c++
@@ -132,7 +134,7 @@ Whenever we call this function, the "Hello World!" text will be printed to the s
 
 **NOTE:** Notice how there is no **return** keyword at the end of the function as opposed to all the other functions which always returned something.
 
-Example usage of void function:
+Example usage of a void function:
 ```c++
 #include <iostream>
 using namespace std;
@@ -157,6 +159,8 @@ int main()
     printMessage(12); // will print to the sceen 12 times "Hello World!"
     printMessage(123); // will print to the screen "That's too much!...."
 
-    return 0;
+    ret
 }
 ```
+
+**NOTE:** Because the C++ compiler reads your file from top to bottom, it's necessary to define functions before they are actually used. That's why you should always define and declare your functions above your main method. If that's not to your liking, you can read up on [Declaring functions](http://www.cplusplus.com/doc/tutorial/functions/#declarations).
