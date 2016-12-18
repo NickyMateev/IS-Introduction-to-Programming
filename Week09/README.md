@@ -1,4 +1,4 @@
-# Week09
+# Week 09
 
 No new material for today. We'll continue practicing **functions**, so if you haven't read last week's material, you can [CLICK HERE][1] to go to it.
 

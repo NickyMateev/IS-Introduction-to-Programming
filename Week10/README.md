@@ -3,11 +3,7 @@
 ## Pointers
 
 ### Other resources:
-Very comprehensive video series on C++ pointers - [Here][1]
+<a href="https://www.youtube.com/watch?v=lAHgavXXWXM&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1" target="_blank">Very comprehensive video series on C++ pointers </a>
 
-C++ Tutorials - Pointers - [Here][2]
-
-
-[1]: https://www.youtube.com/watch?v=lAHgavXXWXM&list=PLRwVmtr-pp05AW78n3IkMJ3M1dlQ-wgv1
-[2]: http://www.cplusplus.com/doc/tutorial/pointers/
+<a href="http://www.cplusplus.com/doc/tutorial/pointers/" target="_blank">C++ Tutorials - Pointers</a>
 
