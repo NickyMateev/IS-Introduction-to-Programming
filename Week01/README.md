@@ -7,13 +7,17 @@ As per Wikipedia:
 
 This is basically the program where you'll write and run your code.
 
-Popular IDEs: **Visual Studio, CodeBlocks, Eclipse, IntelliJ, NetBeans**
+Popular IDEs: **Visual Studio, CodeBlocks, CLion, Eclipse, IntelliJ, NetBeans**
 
-Our personal recommendation is to use either CodeBlocks or VisualStudio.
+Our personal recommendation is to use either VisualStudio or CLion(more lightweight than VisualStudio). A lot of people use CodeBlocks, but we tend to avoid it due to unexpected computational problems sometimes.
+
+> NOTE: If you decide to go with CLion, keep in mind that it's a **paid IDE**. So you'll only have a **30 day trial** to use it. Fortunately, as students, you can make use of your students rights and through your ISIC cards recieve a free subscription for the IDE for the entirety of your bachelor study(you'll have to renew it every year, but that's easy :)).
 
 Visual Studio Community: [Download][1]
 
 CodeBlocks: [Download][2]
+
+CLion: [Download][5]
 
 
 ## Creating your first C++ program
@@ -101,3 +105,4 @@ Git is really the tool that makes all the magic, and GitHub is the site where yo
 [2]: http://www.codeblocks.org/downloads/26
 [3]: https://github.com/stoianivanov/UP_IS_2015/tree/master/GitHub_and_Git
 [4]: https://github.com/HackBulgaria/Programming101-Java/blob/master/week02/3.Friday/prereading.md
+[5]: https://www.jetbrains.com/clion/download/

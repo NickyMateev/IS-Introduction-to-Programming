@@ -1,34 +1,38 @@
 #include <iostream>
+
 using namespace std;
+
 
 int main()
 {
-  int firstDigit = 1, secondDigit = 0, thirdDigit = 0;
-
-  while(firstDigit != 10)
-  {
-    if(firstDigit != secondDigit && secondDigit != thirdDigit && firstDigit != thirdDigit)
+    int n = 0;
+    cout << "Enter a number:";
+    cin >> n;
+    for(int i = 0 ; i <= n; ++i)
     {
-      cout << firstDigit << secondDigit << thirdDigit << endl;
+        for(int j = 0 ; j < n - i; ++j)
+        {
+            cout << ' ';
+        }
+
+        for(int j = 0 ; j < i; ++j)
+        {
+            cout << '*';
+        }
+        cout << " | ";
+
+        for(int j = 0 ; j < i; ++j)
+        {
+            cout << '*';
+        }
+
+                for(int j = 0 ; j < n - i; ++j)
+        {
+            cout << ' ';
+        }
+        cout << endl;
+
     }
-
-    if(secondDigit == 9 && thirdDigit == 9)
-    {
-      secondDigit = 0;
-      thirdDigit = 0;
-
-      firstDigit++;
-    }
-
-    if(thirdDigit == 9)
-    {
-      thirdDigit = 0;
-
-      secondDigit++;
-    }
-
-    thirdDigit++;
-  }
-
-  return 0;
+    return 0;
 }
+

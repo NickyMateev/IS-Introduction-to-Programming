@@ -1,40 +1,38 @@
 #include <iostream>
+
 using namespace std;
+
 
 int main()
 {
-  int x, y;
-  cout << "x = ";
-  cin >> x;
-  cout << "y = ";
-  cin >> y;
-
-  int dividerSumX = 0, dividerSumY = 0; // notice that we set values 0 immediately
-
-  for(int i = 1; i < x; i++)
-  {
-    if(x % i == 0)
+    int n = 0;
+    cout << "Enter a number:";
+    cin >> n;
+    cout << '+';
+    for(int i = 0; i < n -2; ++i)
     {
-      dividerSumX += i;
+        cout << '-';
     }
-  }
+    cout << '+';
+    cout << endl;
 
-  for(int i = 1; i < y; i++)
-  {
-    if(y % i == 0)
+    for(int i = 0; i < n -2; ++i)
     {
-      dividerSumY += i;
+        cout << '|';
+        for( int j = 0 ; j < n -2; ++j)
+        {
+            cout << '-';
+        }
+        cout << '|';
+        cout << endl;
     }
-  }
 
-  if((dividerSumX == y) && (dividerSumY == x))
-  {
-    cout << "X and Y are friendly numbers!" << endl;
-  }
-  else
-  {
-    cout << "X and Y are NOT friendly numbers!" << endl;
-  }
-
-  return 0;
+    cout << '+';
+    for(int i = 0; i < n -2; ++i)
+    {
+        cout << '-';
+    }
+    cout << '+';
+    cout << endl;
+    return 0;
 }

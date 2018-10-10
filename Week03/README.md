@@ -104,7 +104,7 @@ Example of the ternary operator:
 int main()
 {
     int x = 4;
-    cout << (x % 2 == 0 ? "x is an even number" : "x is an odd number";) << endl;
+    cout << (x % 2 == 0 ? "x is an even number" : "x is an odd number") << endl;
 
     return 0;
 }

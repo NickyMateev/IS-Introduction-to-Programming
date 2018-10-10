@@ -1,46 +1,43 @@
 #include <iostream>
+
 using namespace std;
+
 
 int main()
 {
-  int input, lastInput;
-  int min, max;
+    int n = 0;
+    cout << "Enter a number:";
+    cin >> n;
 
-  cout << "Initial input: ";
-  cin >> input;
-  lastInput = input;
-  min = input;
-  max = input;
+    for(int i = 0; i < (n / 2 + n % 2); ++i)
+    {
+        for(int j = 0; j < (n - 2*i)/ 2; ++j)
+        {
+            cout << '-';
+        }
 
-  int repeatCounter = 1;
-  while(repeatCounter < 3)
-  {
-    cout << "Input: ";
-    cin >> input;
-    if(input == lastInput)
-    {
-      repeatCounter++;
-    }
-    else
-    {
-      repeatCounter = 1;
-    }
+        for( int j = 0; j < 2*i + 1 ; ++j)
+        {
+            cout << '*';
+        }
 
-    if(input < min)
-    {
-      min = input;
+        for(int j = 0; j < (n - 2*i)/ 2; ++j)
+        {
+            cout << '-';
+        }
+        cout << endl;
     }
 
-    if(input > max)
+    for(int i = 0; i < n / 2; ++i)
     {
-      max = input;
+        cout << '|';
+        for(int j = 0; j < n - 2; ++j)
+        {
+            cout << '-';
+        }
+        cout << '|';
+
+        cout << endl;
     }
-
-    lastInput = input;
-  }
-
-  cout << "Min = " << min << endl;
-  cout << "Max = " << max << endl;
-
-  return 0;
+    return 0;
 }
